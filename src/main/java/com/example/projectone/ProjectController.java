@@ -22,6 +22,9 @@ import java.nio.charset.CharsetEncoder;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
+
+import static java.nio.charset.StandardCharsets.UTF_8;
+
 @RestController
 public class ProjectController {
 
@@ -31,7 +34,7 @@ public class ProjectController {
         ObjectMapper mapper = new ObjectMapper();
         FileWriter output = new FileWriter("./inventory.txt", true);
         mapper.writeValue(output, newVehicle);
-        FileUtils.writeStringToFile(new File("./inventory.txt"), System.lineSeparator(), CharEncoding.UTF_8, true);
+        FileUtils.writeStringToFile(new File("./inventory.txt"), System.lineSeparator(), UTF_8, true);
         return newVehicle;
     }
 
