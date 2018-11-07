@@ -74,15 +74,6 @@
 			</plugin>
 
 			<plugin>
-				<groupId>com.google.appengine</groupId>
-				<artifactId>gcloud-maven-plugin</artifactId>
-				<version>1.9.48</version>
-				<configuration>
-					<set_default>true</set_default>
-				</configuration>
-			</plugin>
-
-			<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-compiler-plugin</artifactId>
 					<version>3.8.0</version>
